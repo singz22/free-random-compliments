@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   
+   
+   
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click for random compliments</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;  }
+        
+
+
+
+
+        #content {
+            font-size: 24px;
+            cursor: pointer;
+            color: black; /* Change text color */
+        }
+
+        #content a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit text color */
+        }
+
+        .red-link {
+            color: red; /* Set color to red */
+        }
+
+
+    
+      </style>
+</head>
+<body onclick="changeContent()">
+    <div id="content">Click for random compliments!</div>
+
+    <script>
+        function changeContent() {
+            document.getElementById('content').innerHTML = '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">I clicked on this page because I think hallway in RE7 is RNG. Click <span class="red-link">HERE</span> for a free cookie.</a>';
+        }
+    </script>
+</body>
+</html>
